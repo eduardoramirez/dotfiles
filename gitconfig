@@ -1,0 +1,18 @@
+[user]
+name = Eduardo Ramirez
+email = edyr94@gmail.com
+
+[github]
+user = eduardoramirez
+
+[push]
+default = upstream
+
+[advice]
+statusHits = false
+
+[credential]
+helper = osxkeychain
+
+[init]
+defaultBranch = main

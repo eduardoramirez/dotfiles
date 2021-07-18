@@ -1,0 +1,16 @@
+source <(antibody init)
+
+PURE_GIT_PULL=0 # disable automatic fetches by the shell prompt
+
+export EDITOR=nvim
+export VISUAL="${EDITOR}"
+
+antibody bundle < "${HOME}/.zplugins"
+
+source "${HOME}/.zmodules/aliases.zsh"
+source "${HOME}/.zmodules/fzf.zsh"
+source "${HOME}/.zmodules/history.zsh"
+source "${HOME}/.zmodules/git.zsh"
+source "${HOME}/.zmodules/navigation.zsh"
+
+[[ -f "${HOME}/.zshrc.local" ]] && source "${HOME}/.zshrc.local"
