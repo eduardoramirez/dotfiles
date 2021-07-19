@@ -9,12 +9,14 @@ echo "Installing brew apps..."
 brew bundle
 
 echo "Applying configs..."
+
+curl -s -o "vimrc" -k "https://raw.githubusercontent.com/amix/vimrc/master/vimrcs/basic.vim"
+cat "vim/vimrc" >> "vimrc"
+
 apply gitconfig
+apply vimrc
 apply zsh/zplugins
 apply zsh/zmodules
 apply zsh/zshrc
-
-mkdir -p ~/.config
-ln -fns "$(pwd)/nvim" ~/.config/nvim
 
 echo "Done"

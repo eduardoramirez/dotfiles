@@ -1,11 +1,20 @@
+# Always use color output for `ls`
+
+export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
+alias ls="command ls -G"
+alias l="ls -lF -G"
+
+alias grep='grep --color=auto'
+
+# Utilities
+alias reload="exec ${SHELL} -l"
+
 # One-word wonders
 
 alias b=bat
 alias c=cat
 alias g=git
-alias l=exa
-alias ll='exa -l'
-alias v=nvim
+alias v=vim
 
 # Git aliases
 
