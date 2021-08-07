@@ -13,7 +13,7 @@ source "${HOME}/.zmodules/history.zsh"
 source "${HOME}/.zmodules/git.zsh"
 source "${HOME}/.zmodules/navigation.zsh"
 
-source /usr/local/opt/git-extras/share/git-extras/git-extras-completion.zsh
+source "$(brew --prefix git-extras)/share/git-extras/git-extras-completion.zsh"
 
 [[ -f "${HOME}/.zshrc.local" ]] && source "${HOME}/.zshrc.local"
 

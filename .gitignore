@@ -1,4 +1,4 @@
 .DS_Store
 
-Brewfile.lock.json
-vimrc
+/Brewfile.lock.json
+/vimrc
