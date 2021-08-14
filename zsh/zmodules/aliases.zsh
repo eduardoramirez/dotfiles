@@ -1,8 +1,8 @@
 # Always use color output for `ls`
 
 export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
-alias ls="command ls -G"
-alias l="ls -lF -G"
+alias ls='command ls -G'
+alias lls='ls -lF -G'
 
 alias grep='grep --color=auto'
 
@@ -15,6 +15,14 @@ alias b=bat
 alias c=cat
 alias g=git
 alias v=vim
+
+alias l=exa
+alias ll='exa -l'
+
+alias bj='bat -l json'
+alias by='bat -l yaml'
+
+alias cc=clear
 
 # Git aliases
 
