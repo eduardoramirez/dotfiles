@@ -5,8 +5,8 @@ apply() {
   ln -fns "$src" "$dest"
 }
 
-echo "Installing brew apps..."
-# brew bundle
+echo "Installing brew apps......"
+brew bundle
 
 echo "Applying configs..."
 curl -s -o "vimrc" -k "https://raw.githubusercontent.com/amix/vimrc/master/vimrcs/basic.vim"
