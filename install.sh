@@ -5,7 +5,7 @@ apply() {
   ln -fns "$src" "$dest"
 }
 
-echo "Installing brew apps......"
+echo "Installing brew apps....."
 brew bundle
 
 echo "Applying configs..."
