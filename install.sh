@@ -6,7 +6,7 @@ apply() {
 }
 
 echo "Installing brew apps..."
-brew bundle
+# brew bundle
 
 echo "Applying configs..."
 curl -s -o "vimrc" -k "https://raw.githubusercontent.com/amix/vimrc/master/vimrcs/basic.vim"
