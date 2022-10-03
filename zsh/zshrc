@@ -19,3 +19,7 @@ source "$(brew --prefix git-extras)/share/git-extras/git-extras-completion.zsh"
 [[ -f "${HOME}/.zshrc.local" ]] && source "${HOME}/.zshrc.local"
 
 [[ -f "${HOME}/.zshrc.work" ]] && source "${HOME}/.zshrc.work"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

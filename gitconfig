@@ -11,6 +11,9 @@
 [pull]
 	rebase = true
 
+[rebase]
+  autosquash = true
+
 [advice]
 	statusHits = false
 

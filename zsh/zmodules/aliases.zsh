@@ -34,10 +34,8 @@ alias gap='git add --patch'
 alias gc='git commit'
 alias gca='git commit -a'
 alias gcA='git commit --amend'
-alias gam='git commit --amend -C HEAD'
 alias gcm='git commit -m'
 alias gcam='git commit -am'
-alias gcc='git commit -m checkpoint'
 
 alias gco='git checkout'
 alias gcp='git cherry-pick'
@@ -46,9 +44,6 @@ alias gd='git diff'
 alias gds='git diff --staged'
 
 alias gl="git log --pretty='format:%C(yellow)%h %C(green)%ad %Creset%s%Cblue  [%an]' --decorate --date=relative"
-alias gll='gl --stat'
-alias glm='gl master..HEAD'
-alias glu='gl @{upstream}..HEAD'
 
 alias gp='git pull --rebase --no-tags'
 
@@ -58,8 +53,6 @@ alias gra='git rebase --abort'
 alias grc='git add --update && git rebase --continue'
 
 alias gs='git status'
-
-alias gsh='git show'
 
 alias gS='git stash'
 alias gSp='git stash pop'
