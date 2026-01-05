@@ -1,0 +1,11 @@
+# Personal Brewfile
+# This file is created from a template and NOT tracked in git.
+# Add your personal packages below.
+
+# Example packages (uncomment as needed):
+# brew "youtube-dl"
+# brew "ffmpeg"
+
+# Example casks (uncomment as needed):
+# cask "spotify"
+# cask "discord"

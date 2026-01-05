@@ -1,0 +1,41 @@
+# Sheldon configuration file
+# https://sheldon.cli.rs/
+
+shell = "zsh"
+
+[plugins]
+
+# Async support (required by pure prompt)
+[plugins.zsh-async]
+github = "mafredri/zsh-async"
+
+# Pure prompt theme
+[plugins.pure]
+github = "sindresorhus/pure"
+use = ["async.zsh", "pure.zsh"]
+
+# Utilities
+[plugins.ports]
+github = "caarlos0/ports"
+apply = ["PATH"]
+
+[plugins.zsh-mkc]
+github = "caarlos0/zsh-mkc"
+
+[plugins.zsh-bd]
+github = "Tarrasch/zsh-bd"
+
+# Completions and suggestions
+[plugins.zsh-completions]
+github = "zsh-users/zsh-completions"
+
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+
+# Syntax highlighting (must be near end)
+[plugins.zsh-syntax-highlighting]
+github = "zsh-users/zsh-syntax-highlighting"
+
+# History substring search (must be after syntax highlighting)
+[plugins.zsh-history-substring-search]
+github = "zsh-users/zsh-history-substring-search"

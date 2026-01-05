@@ -16,8 +16,18 @@ alias c=cat
 alias g=git
 alias v=vim
 
-alias l=exa
-alias ll='exa -l'
+# Modern ls replacement (eza) with fallback
+if command -v eza &> /dev/null; then
+    alias l='eza'
+    alias ll='eza -l --git'
+    alias la='eza -la --git'
+    alias lt='eza --tree --level=2'
+    alias llt='eza -l --tree --level=2 --git'
+else
+    alias l='ls -G'
+    alias ll='ls -lF -G'
+    alias la='ls -laF -G'
+fi
 
 alias bj='bat -l json'
 alias by='bat -l yaml'

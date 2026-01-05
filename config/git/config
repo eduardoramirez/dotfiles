@@ -1,0 +1,57 @@
+[include]
+    # Include machine-specific config (symlinked based on profile)
+    path = ~/.gitconfig.local
+
+[push]
+    default = upstream
+    autoSetupRemote = true
+
+[pull]
+    rebase = true
+
+[rebase]
+    autosquash = true
+    autoStash = true
+
+[advice]
+    statusHints = false
+
+[credential]
+    helper = osxkeychain
+
+[init]
+    defaultBranch = main
+
+[core]
+    pager = diff-so-fancy | less --tabs=2 -RFX
+    excludesFile = ~/.gitignore_global
+
+[interactive]
+    diffFilter = diff-so-fancy --patch
+
+[color]
+    ui = true
+
+[color "diff-highlight"]
+    oldNormal = red bold
+    oldHighlight = red bold 52
+    newNormal = green bold
+    newHighlight = green bold 22
+
+[color "diff"]
+    meta = 11
+    frag = magenta bold
+    func = 146 bold
+    commit = yellow bold
+    old = red bold
+    new = green bold
+    whitespace = red reverse
+
+[alias]
+    st = status
+    co = checkout
+    br = branch
+    ci = commit
+    lg = log --pretty='format:%C(yellow)%h %C(green)%ad %Creset%s%Cblue  [%an]' --decorate --date=relative
+    unstage = reset HEAD --
+    last = log -1 HEAD

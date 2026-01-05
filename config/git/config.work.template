@@ -1,0 +1,10 @@
+# Work Git Configuration
+# This file is created from a template and NOT tracked in git.
+# Fill in your work-specific details below.
+
+[user]
+    name = Eduardo Ramirez
+    email = YOUR_WORK_EMAIL@company.com
+
+[github]
+    user = YOUR_GITHUB_USERNAME

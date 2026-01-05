@@ -1,0 +1,10 @@
+# Personal Git Configuration
+# This file is created from a template and NOT tracked in git.
+# Fill in your personal details below.
+
+[user]
+    name = Eduardo Ramirez
+    email = YOUR_PERSONAL_EMAIL
+
+[github]
+    user = eduardoramirez

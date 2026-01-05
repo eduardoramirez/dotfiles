@@ -1,4 +1,20 @@
 .DS_Store
 
+# Generated files
 /Brewfile.lock.json
 /vimrc
+
+# Installation logs
+.install.log
+
+# Secrets (if any)
+secrets/
+
+# Local overrides (not tracked)
+*.local
+
+# Profile configs with personal info (use templates instead)
+Brewfile.work
+Brewfile.personal
+config/git/config.work
+config/git/config.personal

@@ -1,0 +1,13 @@
+# Work Brewfile
+# This file is created from a template and NOT tracked in git.
+# Add your work-specific packages below.
+
+# Example packages (uncomment as needed):
+# brew "awscli"
+# brew "terraform"
+# brew "kubectl"
+# brew "helm"
+
+# Example casks (uncomment as needed):
+# cask "slack"
+# cask "zoom"
