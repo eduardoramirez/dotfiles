@@ -277,11 +277,7 @@ setup_git() {
     log_info "Setting up Git configuration..."
 
     # Main gitconfig
-    if [[ -f "${DOTFILES_DIR}/config/git/config" ]]; then
-        safe_symlink "${DOTFILES_DIR}/config/git/config" "${HOME}/.gitconfig"
-    else
-        safe_symlink "${DOTFILES_DIR}/gitconfig" "${HOME}/.gitconfig"
-    fi
+    safe_symlink "${DOTFILES_DIR}/config/git/config" "${HOME}/.gitconfig"
 
     # Profile-specific git config
     local git_profile="${DOTFILES_DIR}/config/git/config.${PROFILE}"
@@ -299,13 +295,8 @@ setup_zsh() {
     safe_symlink "${DOTFILES_DIR}/zsh/zmodules" "${HOME}/.zmodules"
 
     # Sheldon configuration
-    if [[ -f "${DOTFILES_DIR}/config/sheldon/plugins.toml" ]]; then
-        mkdir -p "${HOME}/.config/sheldon"
-        safe_symlink "${DOTFILES_DIR}/config/sheldon/plugins.toml" "${HOME}/.config/sheldon/plugins.toml"
-    else
-        # Legacy: zplugins for antibody (will be migrated)
-        safe_symlink "${DOTFILES_DIR}/zsh/zplugins" "${HOME}/.zplugins"
-    fi
+    mkdir -p "${HOME}/.config/sheldon"
+    safe_symlink "${DOTFILES_DIR}/config/sheldon/plugins.toml" "${HOME}/.config/sheldon/plugins.toml"
 
     log_success "Zsh configured"
 }
