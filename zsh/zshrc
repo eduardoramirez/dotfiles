@@ -42,8 +42,4 @@ pathadd "${HOME}/.local/bin"
 pathadd "${HOME}/.temporal"
 pathadd "${HOME}/.kube/bin"
 
-# Zoxide (replaces rupa/z - smarter cd with frecency)
-eval "$(zoxide init zsh)"
-
-# Atuin (better shell history with search)
-eval "$(atuin init zsh --disable-up-arrow)"
+pathadd "${HOME}/.kube/bin"

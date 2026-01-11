@@ -45,5 +45,10 @@ setopt HIST_VERIFY
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
 
+# Initialize atuin if available
+if command -v atuin &>/dev/null; then
+  eval "$(atuin init zsh --disable-up-arrow)"
+fi
+
 # Lists the ten most used commands.
 alias history-stat="history 0 | awk '{print \$2}' | sort | uniq -c | sort -n -r | head"

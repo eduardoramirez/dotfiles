@@ -7,6 +7,8 @@ brew "bat"              # Better cat with syntax highlighting
 brew "eza"              # Modern ls replacement (replaces unmaintained exa)
 brew "fd"               # Fast find alternative
 brew "fzf"              # Fuzzy finder
+brew "zoxide"           # Smarter cd
+brew "atuin"            # Magical shell history
 brew "ripgrep"          # Fast grep alternative (faster than silver_searcher)
 brew "jq"               # JSON processor
 brew "yq"               # YAML processor

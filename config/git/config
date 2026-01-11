@@ -55,3 +55,9 @@
     lg = log --pretty='format:%C(yellow)%h %C(green)%ad %Creset%s%Cblue  [%an]' --decorate --date=relative
     unstage = reset HEAD --
     last = log -1 HEAD
+
+[credential "https://github.com"]
+	helper = !/opt/homebrew/bin/gh auth git-credential
+
+[credential "https://gist.github.com"]
+	helper = !/opt/homebrew/bin/gh auth git-credential
