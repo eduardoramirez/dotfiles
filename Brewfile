@@ -1,6 +1,3 @@
-# Taps
-tap "homebrew/bundle"
-
 # Shell and Plugin Management
 brew "sheldon"          # Modern shell plugin manager (replaces antibody)
 brew "zsh"
