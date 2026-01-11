@@ -4,7 +4,11 @@ export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
 alias ls='command ls -G'
 alias lls='ls -lF -G'
 
-alias grep='grep --color=auto'
+if command -v ggrep &> /dev/null; then
+    alias grep='ggrep --color=auto'
+elif grep --color=auto --help &> /dev/null; then
+    alias grep='grep --color=auto'
+fi
 
 # Utilities
 alias reload="exec ${SHELL} -l"
@@ -58,7 +62,7 @@ alias gl="git log --pretty='format:%C(yellow)%h %C(green)%ad %Creset%s%Cblue  [%
 alias gp='git pull --rebase --no-tags'
 
 alias gcr='git rebase -i --autosquash'
-alias gcrm='gcr master'
+alias gcrm='gcr main'
 alias gra='git rebase --abort'
 alias grc='git add --update && git rebase --continue'
 

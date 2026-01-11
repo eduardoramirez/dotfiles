@@ -11,7 +11,7 @@ compinit -d "${HOME}/.zcompdump"
 # Sheldon plugin manager (faster than antibody)
 if command -v sheldon &> /dev/null; then
     eval "$(sheldon source)"
-else
+elif [[ -o interactive ]]; then
     echo "Warning: sheldon not found. Run 'brew install sheldon' or install.sh"
 fi
 
@@ -40,6 +40,4 @@ pathadd "${HOME}/src/git-commands"
 # Additional PATH entries (use $HOME for portability)
 pathadd "${HOME}/.local/bin"
 pathadd "${HOME}/.temporal"
-pathadd "${HOME}/.kube/bin"
-
 pathadd "${HOME}/.kube/bin"
